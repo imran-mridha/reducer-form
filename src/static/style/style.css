@@ -1,4 +1,4 @@
-.short_form{
+.reduce_form{
   border: 1px solid rgb(154, 241, 241);
   padding: 20px;
   background-color: azure;
@@ -10,11 +10,11 @@
   row-gap: 5px;
   column-gap: 20px;
 }
-.short_form .label{
+.reduce_form .label{
   font-size: 18px;
   color:rgb(170, 161, 161) 
 }
-.short_form input, select {
+.reduce_form input, select {
   display: block;
   margin: 10px 0;
   padding: 10px;
@@ -22,15 +22,27 @@
   box-sizing: border-box;
   border: 1px solid rgb(154, 241, 241);
   border-radius: 5px;
+  outline: none;
 }
 
-.short_form input:focus-visible{
-  outline: 2px solid rgb(154, 241, 241);
+.input_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color:rgb(170, 161, 161) 
 }
-select:focus-visible{
-  outline: 2px solid rgb(154, 241, 241);
+.reduce_form .box_check {
+  width: auto;
+  accent-color: rgb(154, 241, 241);
 }
-.short_form input[type=submit]{
+
+input[type=checkbox] {
+	zoom: 1.5;
+  margin-top: 12px;
+}
+
+
+.reduce_form input[type=submit]{
   background-color: #fff;
   font-size: 16px;
   color:rgb(170, 161, 161) ;
@@ -40,7 +52,6 @@ select:focus-visible{
   display: flex;
   gap: 5px;
   align-items: center;
-  /* justify-content: center; */
   margin-top: 5px;
 }
 input[type='radio']:checked:after {
@@ -56,7 +67,18 @@ input[type='radio']:checked:after {
   visibility: visible;
   border: 2px solid white;
 }
-
+.reduce_form textarea:focus{
+  outline: none;
+}
+.input_feadback{
+  width: 100%;
+  border: 1px solid rgb(154, 241, 241);
+  margin-top: 10px;
+}
+input[type='submit']{
+  cursor: pointer;
+  text-transform: uppercase;
+}
 .pc-count{
   display: flex;
   gap: 5px;

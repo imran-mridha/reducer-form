@@ -1,11 +1,11 @@
 import './App.css';
 import './static/style/style.css'
-import ShortForm from './components/ShortForm';
+import FormReduce from './components/FormReduce';
 
 function App() {
   return (
     <div className="App">
-      <ShortForm />
+      <FormReduce />
     </div>
   );
 }
